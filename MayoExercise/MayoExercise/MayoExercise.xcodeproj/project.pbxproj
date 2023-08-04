@@ -1,0 +1,699 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		317194A12A7CCB0C009E916B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317194A02A7CCB0C009E916B /* AppDelegate.swift */; };
+		317194A32A7CCB0C009E916B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317194A22A7CCB0C009E916B /* SceneDelegate.swift */; };
+		317194A52A7CCB0C009E916B /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317194A42A7CCB0C009E916B /* ListViewController.swift */; };
+		317194A82A7CCB0C009E916B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 317194A62A7CCB0C009E916B /* Main.storyboard */; };
+		317194AA2A7CCB0D009E916B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 317194A92A7CCB0D009E916B /* Assets.xcassets */; };
+		317194AD2A7CCB0D009E916B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 317194AB2A7CCB0D009E916B /* LaunchScreen.storyboard */; };
+		317194B82A7CCB0D009E916B /* MayoExerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317194B72A7CCB0D009E916B /* MayoExerciseTests.swift */; };
+		317194C22A7CCB0D009E916B /* MayoExerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317194C12A7CCB0D009E916B /* MayoExerciseUITests.swift */; };
+		317194C42A7CCB0D009E916B /* MayoExerciseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317194C32A7CCB0D009E916B /* MayoExerciseUITestsLaunchTests.swift */; };
+		317194D22A7CCCB2009E916B /* ListCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317194D12A7CCCB2009E916B /* ListCollectionCell.swift */; };
+		317194D42A7CD08E009E916B /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317194D32A7CD08E009E916B /* UIView+Extension.swift */; };
+		317194D62A7CD4FF009E916B /* Headline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317194D52A7CD4FF009E916B /* Headline.swift */; };
+		317194D82A7CD8DF009E916B /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317194D72A7CD8DF009E916B /* UIImageView+Extension.swift */; };
+		317194DA2A7D13E3009E916B /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317194D92A7D13E3009E916B /* ListViewModel.swift */; };
+		317194DC2A7D1489009E916B /* ListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317194DB2A7D1489009E916B /* ListUseCase.swift */; };
+		317194DE2A7D18B3009E916B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317194DD2A7D18B3009E916B /* NetworkService.swift */; };
+		317194E42A7D247E009E916B /* ListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317194E32A7D247E009E916B /* ListResponse.swift */; };
+		317194E82A7D2DFD009E916B /* MockListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317194E72A7D2DFD009E916B /* MockListUseCase.swift */; };
+		317194EA2A7D3072009E916B /* MockListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317194E92A7D3072009E916B /* MockListResponse.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		317194B42A7CCB0D009E916B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 317194952A7CCB0C009E916B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3171949C2A7CCB0C009E916B;
+			remoteInfo = MayoExercise;
+		};
+		317194BE2A7CCB0D009E916B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 317194952A7CCB0C009E916B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3171949C2A7CCB0C009E916B;
+			remoteInfo = MayoExercise;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3171949D2A7CCB0C009E916B /* MayoExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MayoExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		317194A02A7CCB0C009E916B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		317194A22A7CCB0C009E916B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		317194A42A7CCB0C009E916B /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		317194A72A7CCB0C009E916B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		317194A92A7CCB0D009E916B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		317194AC2A7CCB0D009E916B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		317194AE2A7CCB0D009E916B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		317194B32A7CCB0D009E916B /* MayoExerciseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MayoExerciseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		317194B72A7CCB0D009E916B /* MayoExerciseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MayoExerciseTests.swift; sourceTree = "<group>"; };
+		317194BD2A7CCB0D009E916B /* MayoExerciseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MayoExerciseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		317194C12A7CCB0D009E916B /* MayoExerciseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MayoExerciseUITests.swift; sourceTree = "<group>"; };
+		317194C32A7CCB0D009E916B /* MayoExerciseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MayoExerciseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		317194D12A7CCCB2009E916B /* ListCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionCell.swift; sourceTree = "<group>"; };
+		317194D32A7CD08E009E916B /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		317194D52A7CD4FF009E916B /* Headline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Headline.swift; sourceTree = "<group>"; };
+		317194D72A7CD8DF009E916B /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		317194D92A7D13E3009E916B /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		317194DB2A7D1489009E916B /* ListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUseCase.swift; sourceTree = "<group>"; };
+		317194DD2A7D18B3009E916B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		317194E32A7D247E009E916B /* ListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListResponse.swift; sourceTree = "<group>"; };
+		317194E72A7D2DFD009E916B /* MockListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockListUseCase.swift; sourceTree = "<group>"; };
+		317194E92A7D3072009E916B /* MockListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockListResponse.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3171949A2A7CCB0C009E916B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		317194B02A7CCB0D009E916B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		317194BA2A7CCB0D009E916B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		317194942A7CCB0C009E916B = {
+			isa = PBXGroup;
+			children = (
+				3171949F2A7CCB0C009E916B /* MayoExercise */,
+				317194B62A7CCB0D009E916B /* MayoExerciseTests */,
+				317194C02A7CCB0D009E916B /* MayoExerciseUITests */,
+				3171949E2A7CCB0C009E916B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3171949E2A7CCB0C009E916B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3171949D2A7CCB0C009E916B /* MayoExercise.app */,
+				317194B32A7CCB0D009E916B /* MayoExerciseTests.xctest */,
+				317194BD2A7CCB0D009E916B /* MayoExerciseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3171949F2A7CCB0C009E916B /* MayoExercise */ = {
+			isa = PBXGroup;
+			children = (
+				317194E52A7D2499009E916B /* AppDelegate */,
+				317194E62A7D24A5009E916B /* UIExtension */,
+				317194D02A7CCC8C009E916B /* ListView */,
+				317194A62A7CCB0C009E916B /* Main.storyboard */,
+				317194A92A7CCB0D009E916B /* Assets.xcassets */,
+				317194AB2A7CCB0D009E916B /* LaunchScreen.storyboard */,
+				317194AE2A7CCB0D009E916B /* Info.plist */,
+			);
+			path = MayoExercise;
+			sourceTree = "<group>";
+		};
+		317194B62A7CCB0D009E916B /* MayoExerciseTests */ = {
+			isa = PBXGroup;
+			children = (
+				317194B72A7CCB0D009E916B /* MayoExerciseTests.swift */,
+				317194E72A7D2DFD009E916B /* MockListUseCase.swift */,
+				317194E92A7D3072009E916B /* MockListResponse.swift */,
+			);
+			path = MayoExerciseTests;
+			sourceTree = "<group>";
+		};
+		317194C02A7CCB0D009E916B /* MayoExerciseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				317194C12A7CCB0D009E916B /* MayoExerciseUITests.swift */,
+				317194C32A7CCB0D009E916B /* MayoExerciseUITestsLaunchTests.swift */,
+			);
+			path = MayoExerciseUITests;
+			sourceTree = "<group>";
+		};
+		317194D02A7CCC8C009E916B /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				317194E02A7D2455009E916B /* View */,
+				317194E12A7D245F009E916B /* ViewModel */,
+				317194DF2A7D243F009E916B /* Service */,
+				317194E22A7D2467009E916B /* Model */,
+			);
+			path = ListView;
+			sourceTree = "<group>";
+		};
+		317194DF2A7D243F009E916B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				317194DB2A7D1489009E916B /* ListUseCase.swift */,
+				317194DD2A7D18B3009E916B /* NetworkService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		317194E02A7D2455009E916B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				317194A42A7CCB0C009E916B /* ListViewController.swift */,
+				317194D12A7CCCB2009E916B /* ListCollectionCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		317194E12A7D245F009E916B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				317194D92A7D13E3009E916B /* ListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		317194E22A7D2467009E916B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				317194D52A7CD4FF009E916B /* Headline.swift */,
+				317194E32A7D247E009E916B /* ListResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		317194E52A7D2499009E916B /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				317194A02A7CCB0C009E916B /* AppDelegate.swift */,
+				317194A22A7CCB0C009E916B /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		317194E62A7D24A5009E916B /* UIExtension */ = {
+			isa = PBXGroup;
+			children = (
+				317194D32A7CD08E009E916B /* UIView+Extension.swift */,
+				317194D72A7CD8DF009E916B /* UIImageView+Extension.swift */,
+			);
+			path = UIExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3171949C2A7CCB0C009E916B /* MayoExercise */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 317194C72A7CCB0D009E916B /* Build configuration list for PBXNativeTarget "MayoExercise" */;
+			buildPhases = (
+				317194992A7CCB0C009E916B /* Sources */,
+				3171949A2A7CCB0C009E916B /* Frameworks */,
+				3171949B2A7CCB0C009E916B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MayoExercise;
+			productName = MayoExercise;
+			productReference = 3171949D2A7CCB0C009E916B /* MayoExercise.app */;
+			productType = "com.apple.product-type.application";
+		};
+		317194B22A7CCB0D009E916B /* MayoExerciseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 317194CA2A7CCB0D009E916B /* Build configuration list for PBXNativeTarget "MayoExerciseTests" */;
+			buildPhases = (
+				317194AF2A7CCB0D009E916B /* Sources */,
+				317194B02A7CCB0D009E916B /* Frameworks */,
+				317194B12A7CCB0D009E916B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				317194B52A7CCB0D009E916B /* PBXTargetDependency */,
+			);
+			name = MayoExerciseTests;
+			productName = MayoExerciseTests;
+			productReference = 317194B32A7CCB0D009E916B /* MayoExerciseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		317194BC2A7CCB0D009E916B /* MayoExerciseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 317194CD2A7CCB0D009E916B /* Build configuration list for PBXNativeTarget "MayoExerciseUITests" */;
+			buildPhases = (
+				317194B92A7CCB0D009E916B /* Sources */,
+				317194BA2A7CCB0D009E916B /* Frameworks */,
+				317194BB2A7CCB0D009E916B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				317194BF2A7CCB0D009E916B /* PBXTargetDependency */,
+			);
+			name = MayoExerciseUITests;
+			productName = MayoExerciseUITests;
+			productReference = 317194BD2A7CCB0D009E916B /* MayoExerciseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		317194952A7CCB0C009E916B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					3171949C2A7CCB0C009E916B = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					317194B22A7CCB0D009E916B = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 3171949C2A7CCB0C009E916B;
+					};
+					317194BC2A7CCB0D009E916B = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 3171949C2A7CCB0C009E916B;
+					};
+				};
+			};
+			buildConfigurationList = 317194982A7CCB0C009E916B /* Build configuration list for PBXProject "MayoExercise" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 317194942A7CCB0C009E916B;
+			productRefGroup = 3171949E2A7CCB0C009E916B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3171949C2A7CCB0C009E916B /* MayoExercise */,
+				317194B22A7CCB0D009E916B /* MayoExerciseTests */,
+				317194BC2A7CCB0D009E916B /* MayoExerciseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3171949B2A7CCB0C009E916B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				317194AD2A7CCB0D009E916B /* LaunchScreen.storyboard in Resources */,
+				317194AA2A7CCB0D009E916B /* Assets.xcassets in Resources */,
+				317194A82A7CCB0C009E916B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		317194B12A7CCB0D009E916B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		317194BB2A7CCB0D009E916B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		317194992A7CCB0C009E916B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				317194DE2A7D18B3009E916B /* NetworkService.swift in Sources */,
+				317194D42A7CD08E009E916B /* UIView+Extension.swift in Sources */,
+				317194DC2A7D1489009E916B /* ListUseCase.swift in Sources */,
+				317194A52A7CCB0C009E916B /* ListViewController.swift in Sources */,
+				317194D82A7CD8DF009E916B /* UIImageView+Extension.swift in Sources */,
+				317194E42A7D247E009E916B /* ListResponse.swift in Sources */,
+				317194A12A7CCB0C009E916B /* AppDelegate.swift in Sources */,
+				317194A32A7CCB0C009E916B /* SceneDelegate.swift in Sources */,
+				317194D22A7CCCB2009E916B /* ListCollectionCell.swift in Sources */,
+				317194DA2A7D13E3009E916B /* ListViewModel.swift in Sources */,
+				317194D62A7CD4FF009E916B /* Headline.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		317194AF2A7CCB0D009E916B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				317194EA2A7D3072009E916B /* MockListResponse.swift in Sources */,
+				317194B82A7CCB0D009E916B /* MayoExerciseTests.swift in Sources */,
+				317194E82A7D2DFD009E916B /* MockListUseCase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		317194B92A7CCB0D009E916B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				317194C42A7CCB0D009E916B /* MayoExerciseUITestsLaunchTests.swift in Sources */,
+				317194C22A7CCB0D009E916B /* MayoExerciseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		317194B52A7CCB0D009E916B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3171949C2A7CCB0C009E916B /* MayoExercise */;
+			targetProxy = 317194B42A7CCB0D009E916B /* PBXContainerItemProxy */;
+		};
+		317194BF2A7CCB0D009E916B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3171949C2A7CCB0C009E916B /* MayoExercise */;
+			targetProxy = 317194BE2A7CCB0D009E916B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		317194A62A7CCB0C009E916B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				317194A72A7CCB0C009E916B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		317194AB2A7CCB0D009E916B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				317194AC2A7CCB0D009E916B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		317194C52A7CCB0D009E916B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		317194C62A7CCB0D009E916B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		317194C82A7CCB0D009E916B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MayoExercise/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mayo.MayoExercise;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		317194C92A7CCB0D009E916B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MayoExercise/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mayo.MayoExercise;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		317194CB2A7CCB0D009E916B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mayo.MayoExerciseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MayoExercise.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MayoExercise";
+			};
+			name = Debug;
+		};
+		317194CC2A7CCB0D009E916B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mayo.MayoExerciseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MayoExercise.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MayoExercise";
+			};
+			name = Release;
+		};
+		317194CE2A7CCB0D009E916B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mayo.MayoExerciseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MayoExercise;
+			};
+			name = Debug;
+		};
+		317194CF2A7CCB0D009E916B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mayo.MayoExerciseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MayoExercise;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		317194982A7CCB0C009E916B /* Build configuration list for PBXProject "MayoExercise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				317194C52A7CCB0D009E916B /* Debug */,
+				317194C62A7CCB0D009E916B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		317194C72A7CCB0D009E916B /* Build configuration list for PBXNativeTarget "MayoExercise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				317194C82A7CCB0D009E916B /* Debug */,
+				317194C92A7CCB0D009E916B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		317194CA2A7CCB0D009E916B /* Build configuration list for PBXNativeTarget "MayoExerciseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				317194CB2A7CCB0D009E916B /* Debug */,
+				317194CC2A7CCB0D009E916B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		317194CD2A7CCB0D009E916B /* Build configuration list for PBXNativeTarget "MayoExerciseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				317194CE2A7CCB0D009E916B /* Debug */,
+				317194CF2A7CCB0D009E916B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 317194952A7CCB0C009E916B /* Project object */;
+}
